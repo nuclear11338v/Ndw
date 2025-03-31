@@ -14,8 +14,6 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: #fff;
             background: #000;
-            height: 100vh; /* Pura screen height */
-            overflow: hidden; /* Extra scroll hatane ke liye */
         }
         .video-bg {
             position: fixed;
@@ -27,27 +25,25 @@
             z-index: -1;
         }
         .container {
-            position: relative;
             max-width: 400px;
             margin: 20px auto;
             padding: 15px;
-            background-color: rgba(0, 0, 0, 0.2); /* Opacity 20% */
+            background-color: rgba(0, 0, 0, 0.7);
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
             text-align: center;
             animation: fadeIn 1s ease-in-out;
-            z-index: 1; /* Content video ke upar rahe */
         }
         h1, h2, p {
             color: #fff;
             text-transform: uppercase;
             text-shadow: 0 0 10px silver;
-            animation: textGlow 2s ease-in-out infinite; /* Glow effect slow */
+            animation: textGlow 0.8s ease-in-out infinite;
             margin-bottom: 10px;
-            font-size: 1.2em; /* Original size */
+            font-size: 1.2em;
         }
         p {
-            font-size: 0.85em; /* Original size */
+            font-size: 0.85em;
         }
         .inline-details {
             display: flex;
@@ -57,13 +53,13 @@
         .inline-details div {
             width: 33%;
             text-align: center;
-            animation: textGlow 2s ease-in-out infinite; /* Glow effect slow */
+            animation: textGlow 0.8s ease-in-out infinite;
         }
         .place {
-            font-size: 0.8em; /* Original size */
+            font-size: 0.8em;
         }
         .best-friend {
-            font-size: 0.8em; /* Original size */
+            font-size: 0.8em;
         }
         .section ul {
             list-style-type: none;
@@ -76,14 +72,14 @@
             border-radius: 5px;
             text-transform: uppercase;
             text-shadow: 0 0 10px silver;
-            animation: textGlow 2s ease-in-out infinite; /* Glow effect slow */
-            font-size: 0.85em; /* Original size */
+            animation: textGlow 0.8s ease-in-out infinite;
+            font-size: 0.85em;
         }
         a {
             color: #fff;
             text-decoration: none;
             text-shadow: 0 0 10px silver;
-            animation: textGlow 2s ease-in-out infinite; /* Glow effect slow */
+            animation: textGlow 0.8s ease-in-out infinite;
         }
         a:hover {
             color: #00ffcc;
@@ -91,34 +87,33 @@
         .title {
             text-align: center;
             margin-bottom: 15px;
-            font-size: 1.8em; /* Original size */
+            font-size: 1.8em;
             font-weight: bold;
             color: #fff;
             text-shadow: 0 0 15px silver;
-            animation: textGlow 2s ease-in-out infinite; /* Glow effect slow */
+            animation: textGlow 0.8s ease-in-out infinite;
         }
         img {
             border-radius: 50%;
-            width: 100px; /* Original size */
-            height: 100px; /* Original size */
+            width: 100px;
+            height: 100px;
             margin-bottom: 15px;
             animation: fadeIn 1s ease-in-out;
         }
-        /* Animation Keyframes */
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
         }
         @keyframes textGlow {
-            0% { text-shadow: 0 0 5px silver; } /* Chhota glow */
-            50% { text-shadow: 0 0 15px silver, 0 0 25px silver; } /* Bada glow */
-            100% { text-shadow: 0 0 5px silver; } /* Wapas chhota */
+            0% { text-shadow: 0 0 10px silver, 0 0 20px silver; }
+            50% { text-shadow: 0 0 20px silver, 0 0 30px silver; }
+            100% { text-shadow: 0 0 10px silver, 0 0 20px silver; }
         }
     </style>
 </head>
 <body>
 
-    <video class="video-bg" autoplay muted loop>
+    <video class="video-bg" autoplay loop>
         <source src="video.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
@@ -161,4 +156,4 @@
     </div>
 
 </body>
-                </html>
+</html>
